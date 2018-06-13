@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import QuizQuestionButton from './QuizQuestionButton';
 class QuizQuestion extends Component {
-  handleClick = button_text => {
+  handleClick(button_text) {
+    console.log('Calling HandleClick method');
     if (button_text === this.props.quiz_question.answer)
       this.props.showNextQuestionHandler();
-  };
+  }
   render() {
     return (
       <main>

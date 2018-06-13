@@ -9,9 +9,9 @@ class Quiz extends Component {
     super(props);
     this.state = { quiz_position: 1 };
   }
-  showNextQuestion = () => {
+  showNextQuestion() {
     this.setState({ quiz_position: this.state.quiz_position });
-  };
+  }
 
   render() {
     const isQuizEnd =

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 class QuizQuestionButton extends Component {
-  handleClick = () => {
+  handleClick() {
+    console.log('Calling HandleClick method');
     this.props.clickHandler(this.props.button_text);
-  };
+  }
 
   render() {
     return (
